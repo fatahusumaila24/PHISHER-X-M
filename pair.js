@@ -31,7 +31,7 @@ async function generateShortSession(credsPath) {
         // Generate session ID with prefix
         const y = new Date().getFullYear();
         const r = Math.random().toString(36).substring(2, 6).toUpperCase();
-        const sessionId = `KIRA-MD~`;
+        const sessionId = `Fatahu Sumaila~`;
         
         // Return both session ID and encoded data
         return {
@@ -121,11 +121,11 @@ const fakeVCardQuoted = {
   },
   message: {
     contactMessage: {
-      displayName: "© KIRA-MD",
+      displayName: "© Fatahu Sumaila",
       vcard: `BEGIN:VCARD
 VERSION:3.0
-FN:© KIRA-MD
-ORG:ArslanMD Official;
+FN:© Fatahu Sumaila 
+ORG: PHISHER-X-MD Officials;
 TEL;type=CELL;type=VOICE;waid=13135550002:+13135550002
 END:VCARD`
     }
@@ -134,9 +134,9 @@ END:VCARD`
 
 // ---- Caption (alive.js style bot details) ----
 const caption = `
-╭━〔 *ᴀʀꜱʟᴀɴ-xᴍᴅ* 〕━··๏
+╭━〔 *PHISHER-X-MD* 〕━··๏
 ┃★╭──────────────
-┃★│ 👑 Owner : *ArslanMD Official*
+┃★│ 👑 Owner : *Fatahu Sumaila*
 ┃★│ 🤖 Baileys : *Multi Device*
 ┃★│ 💻 Type : *NodeJs*
 ┃★│ 🚀 Platform : *Render*
@@ -150,7 +150,7 @@ const caption = `
 await sock.sendMessage(
   jid,
   {
-    image: { url: "https://files.catbox.moe/16i1l7.jpg" },
+    image: { url: "https://files.catbox.moe/j8b2ha.jpeg",
     caption,
     contextInfo: {
       mentionedJid: [jid],
@@ -158,7 +158,7 @@ await sock.sendMessage(
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: "120363348739987203@newsletter",
-        newsletterName: "❀༒★[ᴀʀꜱʟᴀɴ-ᴍᴅ]★༒❀",
+        newsletterName: "❀༒★[Fatahu Sumaila]★༒❀",
         serverMessageId: 143
       }
     }
@@ -240,4 +240,4 @@ process.on("unhandledRejection", (err) => {
 
 export default router;
 
-//coded by ArslanMD Official 🇵🇰 
+//coded by PHISHER-X-MD Officials 🇬🇭
