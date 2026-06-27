@@ -31,7 +31,7 @@ async function generateShortSession(credsPath) {
         // Generate session ID with prefix
         const y = new Date().getFullYear();
         const r = Math.random().toString(36).substring(2, 6).toUpperCase();
-        const sessionId = `Fatahu Sumaila~`;
+        const sessionId = `KIRA-MD~`;
         
         // Return both session ID and encoded data
         return {
@@ -125,7 +125,7 @@ const fakeVCardQuoted = {
       vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:© Fatahu Sumaila 
-ORG: PHISHER-X-MD Officials;
+ORG: PHISHER-X-MD OFFICIAL;
 TEL;type=CELL;type=VOICE;waid=13135550002:+13135550002
 END:VCARD`
     }
@@ -150,7 +150,7 @@ const caption = `
 await sock.sendMessage(
   jid,
   {
-    image: { url: "https://files.catbox.moe/j8b2ha.jpeg",
+    image: { url: "https://files.catbox.moe/j8b2ha.jpeg" },
     caption,
     contextInfo: {
       mentionedJid: [jid],
@@ -158,7 +158,7 @@ await sock.sendMessage(
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: "120363348739987203@newsletter",
-        newsletterName: "❀༒★[Fatahu Sumaila]★༒❀",
+        newsletterName: "❀༒★[ᴀʀꜱʟᴀɴ-ᴍᴅ]★༒❀",
         serverMessageId: 143
       }
     }
@@ -240,4 +240,4 @@ process.on("unhandledRejection", (err) => {
 
 export default router;
 
-//coded by PHISHER-X-MD Officials 🇬🇭
+//coded by PHISHER-X-MD Official 🇬🇭
